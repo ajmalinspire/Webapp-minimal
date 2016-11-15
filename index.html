@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emergency WebApp</title>
+
+    <!-- Global stylesheets -->
+
+    <link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/core.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/components.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/colors.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <!-- Core JS files -->
+    <script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+    <!-- /core JS files -->
+    <!-- Maps JS files -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="assets/js/maps/google/layers/fusion_tables.js"></script>
+    <!-- /Maps JS files -->
+
+    <!-- Theme JS files -->
+    <script type="text/javascript" src="assets/js/core/app.js"></script>
+    <!-- /theme JS files -->
+
+
+
+</head>
+
+<body>
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-inverse">
+        <ul class="nav navbar-nav">
+            <li><a class="sidebar-control sidebar-main-toggle hidden-xs"><em class="icon-paragraph-justify3"></em></a></li>
+        </ul>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo_light.png" alt=""></a>
+            <ul class="nav navbar-nav visible-xs-block">
+                <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
+                <li><a class="sidebar-mobile-main-toggle"><i class="icon-paragraph-justify3"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+    <!-- Page container -->
+    <div class="page-container">
+        <!-- Page content -->
+        <div class="page-content">
+            <!-- Main sidebar -->
+            <div class="sidebar sidebar-main">
+                <div class="sidebar-content">
+                    <!-- User menu -->
+                    <!-- /user menu -->
+                    <!-- Main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li class="active sidebar-show"><a href="index.html"><i class="icon-home4"></i> <span>Dashboard</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /main navigation -->
+                    <div class="sidebar-category sidebar-category-visible">
+                        <div class="category-content no-padding">
+                            <ul class="navigation navigation-main navigation-accordion">
+                                <!-- Main -->
+                                <li>
+                                    <a href="#"><i class="icon-stack sidebar-show"></i> <span>Events</span></a>
+                                    <ul>
+                                        <li><a href=>Completed Events</a></li>
+                                        <li> <a href=>Overrided Events</a></li>
+                                        <li> <a href=>Archived Events</a> </li>
+                                        <li><a href=>Search Events</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-stack sidebar-show"></i> <span>Manage</span></a>
+                                    <ul>
+                                        <li><a href=>Live View</a></li>
+                                        <li><a href=>Ongoing Events</a></li>
+                                        <li><a href=>Critical Events</a></li>
+                                        <li> <a href=>Ambiguos Events</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-stack sidebar-show"></i> <span>Database</span></a>
+                                    <ul>
+                                        <li><a href=>Response Vehichles</a></li>
+                                        <li><a href=>Hospitals</a></li>
+                                        <li> <a href=>Users</a></li>
+                                    </ul>
+                                </li>
+                                <!-- /main -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /main sidebar -->
+            <!-- Main content -->
+            <div class="content-wrapper">
+                <div class="content  sidebar-hide">
+                    <div class="panel panel-flat">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h6 class="panel-title">Sectors View</h6>
+                                <div class="heading-elements">
+                                    <ul class="icons-list">
+                                        <li><a data-action="collapse"></a></li>
+                                        <li><a data-action="reload"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="heading-elements panel-pills">
+                                    <ul class="nav nav-pills nav-tabs-bottom">
+                                        <li class="active"><a href="#panel-tab1" data-toggle="tab" aria-expanded="true"><i class="icon-dribbble3 position-left"></i>Primary</a></li>
+                                        <li class=""><a href="#panel-tab2" data-toggle="tab" aria-expanded="false"><i class="icon-dribbble position-left"></i> Secondary</a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <i class="icon-cog5"></i> <span class="visible-xs-inline-block position-right">Dropdown</span> <span class="caret"></span> </a>
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li><a href="#panel-tab3" tabindex="-1" data-toggle="tab"><i class="icon-people"></i> Profile settings</a></li>
+                                                <li><a href="#panel-tab4" tabindex="-1" data-toggle="tab"><i class="icon-stack"></i> Layout settings</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="heading-elements-toggle"><i class="icon-menu"></i></a>
+                            </div>
+                            <div class="panel-tab-content tab-content">
+                                <div class="tab-pane has-padding active" id="panel-tab1">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">Realtime Data</h5>
+                                        <div class="map-container map-layer-fusion-tables"></div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane has-padding" id="panel-tab2">
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">Realtime Data</h5>
+                                        <div class="map-container map-layer-traffic"></div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane has-padding" id="panel-tab3">
+                                    Third panel tab content
+                                    <div class="panel-heading">
+                                        <h5 class="panel-title">Realtime Data</h5>
+                                    </div>
+                                </div>
+                                <div class="tab-pane has-padding" id="panel-tab4"> Fourth panel tab content </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Page header -->
+                    <!-- /page header -->
+                </div>
+                <!-- Content area -->
+                <!-- /content area -->
+            </div>
+            <!-- /main content -->
+        </div>
+        <!-- /page content -->
+    </div>
+    <!-- /page container -->
+</body>
+</html>
